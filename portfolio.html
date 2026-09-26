@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Mobile Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jyothi Priyadarsini V | Assistant Professor</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        /* Navbar */
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #0d6efd, #6f42c1);
+            color: white;
+            padding: 80px 15px 40px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 7vw, 4.5rem);
+            font-weight: 700;
+        }
+
+        .hero h3 {
+            font-size: clamp(1.2rem, 4vw, 2rem);
+        }
+
+        .profile-icon {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-color: white;
+            color: #0d6efd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 90px;
+            margin: auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+
+        /* Section */
+        section {
+            padding: 70px 15px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 45px;
+            color: #212529;
+        }
+
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #0d6efd;
+            margin: 12px auto;
+            border-radius: 5px;
+        }
+
+        /* Cards */
+        .portfolio-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+            height: 100%;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .icon-box {
+            font-size: 45px;
+            color: #0d6efd;
+            margin-bottom: 15px;
+        }
+
+        /* Subject badges */
+        .subject-badge {
+            font-size: 16px;
+            margin: 5px;
+            padding: 10px 15px;
+        }
+
+        /* Contact */
+        .contact-box {
+            border-radius: 15px;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .contact-item {
+            margin-bottom: 20px;
+            font-size: 17px;
+        }
+
+        .contact-item i {
+            color: #0d6efd;
+            font-size: 25px;
+            margin-right: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #212529;
+            color: white;
+            padding: 25px 10px;
+            text-align: center;
+        }
+
+        /* Back to Top */
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            z-index: 999;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 576px) {
+
+            .hero {
+                text-align: center;
+                padding-top: 100px;
+            }
+
+            .profile-icon {
+                width: 140px;
+                height: 140px;
+                font-size: 65px;
+                margin-bottom: 35px;
+            }
+
+            .hero .btn {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            section {
+                padding: 55px 15px;
+            }
+
+            .contact-box {
+                padding: 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#home">
+                JYOTHI PRIYADARSINI V
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#subjects">Subjects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <!-- Profile Icon -->
+                <div class="col-lg-4 mb-4 mb-lg-0">
+
+                    <div class="profile-icon">
+                        <i class="bi bi-person"></i>
+                    </div>
+
+                </div>
+
+
+                <!-- Profile Information -->
+                <div class="col-lg-8">
+
+                    <p class="fs-5 mb-2">
+                        Welcome to my portfolio
+                    </p>
+
+                    <h1>
+                        JYOTHI PRIYADARSINI V
+                    </h1>
+
+                    <h3 class="mb-3">
+                        Assistant Professor in Information Technology
+                    </h3>
+
+                    <p class="lead">
+                        Passionate educator with an interest in teaching
+                        programming, operating systems and advanced
+                        technologies.
+                    </p>
+
+                    <a href="#about"
+                       class="btn btn-light btn-lg me-2">
+                        <i class="bi bi-person-lines-fill"></i>
+                        Know More
+                    </a>
+
+                    <a href="#contact"
+                       class="btn btn-outline-light btn-lg">
+                        <i class="bi bi-envelope"></i>
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                About Me
+            </h2>
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-9">
+
+                    <div class="card portfolio-card">
+
+                        <div class="card-body p-4 p-md-5">
+
+                            <h4 class="mb-4">
+                                <i class="bi bi-person-badge text-primary"></i>
+                                Professional Profile
+                            </h4>
+
+                            <p>
+                                I am
+                                <strong>JYOTHI PRIYADARSINI V</strong>,
+                                working as an
+                                <strong>Assistant Professor in the
+                                Department of Information Technology</strong>
+                                at
+                                <strong>
+                                    Sir C.R. Reddy College of Engineering
+                                </strong>.
+                            </p>
+
+                            <p>
+                                I am interested in teaching and learning
+                                computer science and information technology
+                                concepts, with a focus on programming,
+                                web technologies and operating systems.
+                            </p>
+
+                            <p class="mb-0">
+                                My teaching approach focuses on explaining
+                                concepts in a simple and practical manner,
+                                helping students connect theoretical
+                                knowledge with programming and real-world
+                                applications.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= COLLEGE ================= -->
+
+    <section class="bg-light">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Academic Profile
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-4">
+
+                    <div class="card portfolio-card text-center p-4">
+
+                        <div class="icon-box">
+                            <i class="bi bi-person-workspace"></i>
+                        </div>
+
+                        <h5>Designation</h5>
+
+                        <p class="mb-0">
+                            Assistant Professor
+                        </p>
+
+                        <p class="text-muted">
+                            Department of Information Technology
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-md-4">
+
+                    <div class="card portfolio-card text-center p-4">
+
+                        <div class="icon-box">
+                            <i class="bi bi-building"></i>
+                        </div>
+
+                        <h5>Institution</h5>
+
+                        <p class="mb-0">
+                            Sir C.R. Reddy College of Engineering
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-md-4">
+
+                    <div class="card portfolio-card text-center p-4">
+
+                        <div class="icon-box">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+
+                        <h5>Department</h5>
+
+                        <p class="mb-0">
+                            Information Technology
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SUBJECTS ================= -->
+
+    <section id="subjects">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Subjects Taught
+            </h2>
+
+            <div class="row g-4">
+
+                <!-- Java -->
+                <div class="col-12 col-md-4">
+
+                    <div class="card portfolio-card text-center p-4">
+
+                        <div class="icon-box">
+                            <i class="bi bi-cup-hot"></i>
+                        </div>
+
+                        <h4>Java Programming</h4>
+
+                        <p>
+                            Object-oriented programming,
+                            classes, objects, inheritance,
+                            interfaces, collections and more.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Advanced Java -->
+                <div class="col-12 col-md-4">
+
+                    <div class="card portfolio-card text-center p-4">
+
+                        <div class="icon-box">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+
+                        <h4>Advanced Java</h4>
+
+                        <p>
+                            JDBC, Servlets, JSP, web applications,
+                            database connectivity and Java web
+                            technologies.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Operating Systems -->
+                <div class="col-12 col-md-4">
+
+                    <div class="card portfolio-card text-center p-4">
+
+                        <div class="icon-box">
+                            <i class="bi bi-cpu"></i>
+                        </div>
+
+                        <h4>Operating Systems</h4>
+
+                        <p>
+                            Processes, threads, scheduling,
+                            synchronization, deadlocks,
+                            memory management and file systems.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Subject Badges -->
+
+            <div class="text-center mt-5">
+
+                <span class="badge bg-primary subject-badge">
+                    Java
+                </span>
+
+                <span class="badge bg-success subject-badge">
+                    Advanced Java
+                </span>
+
+                <span class="badge bg-danger subject-badge">
+                    Operating Systems
+                </span>
+
+                <span class="badge bg-warning text-dark subject-badge">
+                    JDBC
+                </span>
+
+                <span class="badge bg-info text-dark subject-badge">
+                    Servlets
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="bg-light">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Technical Skills
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-6 col-md-3">
+
+                    <div class="card portfolio-card text-center p-4">
+
+                        <i class="bi bi-cup-hot icon-box"></i>
+
+                        <h5>Java</h5>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-6 col-md-3">
+
+                    <div class="card portfolio-card text-center p-4">
+
+                        <i class="bi bi-database icon-box"></i>
+
+                        <h5>MySQL</h5>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-6 col-md-3">
+
+                    <div class="card portfolio-card text-center p-4">
+
+                        <i class="bi bi-globe icon-box"></i>
+
+                        <h5>Web Technologies</h5>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-6 col-md-3">
+
+                    <div class="card portfolio-card text-center p-4">
+
+                        <i class="bi bi-terminal icon-box"></i>
+
+                        <h5>Operating Systems</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Contact Me
+            </h2>
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-md-8 col-lg-6">
+
+                    <div class="contact-box text-center">
+
+                        <h4 class="mb-4">
+                            Get In Touch
+                        </h4>
+
+
+                        <div class="contact-item">
+
+                            <i class="bi bi-person"></i>
+
+                            <strong>
+                                JYOTHI PRIYADARSINI V
+                            </strong>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <i class="bi bi-briefcase"></i>
+
+                            Assistant Professor – IT
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <i class="bi bi-building"></i>
+
+                            Sir C.R. Reddy College of Engineering
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <i class="bi bi-telephone"></i>
+
+                            <a href="tel:9550647061"
+                               class="text-decoration-none">
+
+                                9550647061
+
+                            </a>
+
+                        </div>
+
+
+                        <!-- Call Button -->
+
+                        <a href="tel:9550647061"
+                           class="btn btn-primary btn-lg mt-3">
+
+                            <i class="bi bi-telephone-fill"></i>
+
+                            Call Me
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p class="mb-1">
+            © <span id="year"></span>
+            JYOTHI PRIYADARSINI V
+        </p>
+
+        <small>
+            Assistant Professor | Information Technology
+        </small>
+
+    </footer>
+
+
+    <!-- ================= BACK TO TOP ================= -->
+
+    <button id="backToTop"
+            class="btn btn-primary"
+            onclick="goToTop()">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </button>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- ================= CUSTOM JAVASCRIPT ================= -->
+
+    <script>
+
+        // Display current year automatically
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+
+        // Back to Top Button
+
+        window.addEventListener("scroll", function () {
+
+            const button =
+                document.getElementById("backToTop");
+
+            if (window.scrollY > 300) {
+
+                button.style.display = "block";
+
+            } else {
+
+                button.style.display = "none";
+
+            }
+
+        });
+
+
+        // Scroll to top
+
+        function goToTop() {
+
+            window.scrollTo({
+
+                top: 0,
+
+                behavior: "smooth"
+
+            });
+
+        }
+
+
+        // Automatically close mobile navbar
+        // after clicking a menu item
+
+        document.querySelectorAll(".nav-link").forEach(
+            function (link) {
+
+                link.addEventListener("click", function () {
+
+                    const navbar =
+                        document.getElementById("navbarMenu");
+
+                    if (navbar.classList.contains("show")) {
+
+                        const bsCollapse =
+                            bootstrap.Collapse.getInstance(navbar);
+
+                        if (bsCollapse) {
+
+                            bsCollapse.hide();
+
+                        }
+
+                    }
+
+                });
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>
+
